@@ -1,0 +1,14 @@
+[
+  {
+    "nombre": "Tipos",
+    "redirect": "/dashboard/tipos"
+  },
+  {
+    "nombre": "Tematicas",
+    "redirect": "/dashboard/tematicas"
+  },
+  {
+    "nombre": "Articulos",
+    "redirect": "/dashboard/articulos"
+  }
+]

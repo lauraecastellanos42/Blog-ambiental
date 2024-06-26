@@ -1,0 +1,127 @@
+.newsletter {
+  background-color: hsl(192deg, 100%, 9%);
+  color: hsl(207deg, 100%, 98%);
+  padding: 70px 25px 40px;
+}
+
+@media (min-width: 1440px) {
+  .newsletter {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .newsletter-contact__logo-huddle {
+    width: 250px;
+  }
+  .newsletter-contact__description {
+    font-size: 1.1em;
+    width: 370px;
+  }
+}
+.newsletter-subscription {
+  margin-bottom: 100px;
+}
+.newsletter-subscription__title {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+.newsletter-subscription__description {
+  font-size: 0.95em;
+  margin-bottom: 30px;
+}
+.newsletter-subscription__input {
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
+}
+.newsletter-subscription__submit-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.newsletter-subscription__submit {
+  background-color: hsl(322deg, 100%, 66%);
+  display: block;
+  border: none;
+  border: 1px solid unset;
+  border-radius: 50px;
+  color: hsl(207deg, 100%, 98%);
+  width: 200px;
+  height: 40px;
+  border-radius: 8px;
+}
+@media (min-width: 1440px) {
+  .newsletter-subscription__submit {
+    width: 400px;
+    height: 80px;
+    font-size: 1.25em;
+  }
+}
+.newsletter-subscription__submit:hover {
+  cursor: pointer;
+  background-color: hsl(321deg, 100%, 78%);
+  color: #fff;
+}
+
+@media (min-width: 1440px) {
+  .newsletter-subscription {
+    display: flex;
+    width: 580px;
+    height: 240px;
+  }
+  .newsletter-subscription__title {
+    font-size: 1.6em;
+  }
+  .newsletter-subscription__description {
+    font-size: 1.1em;
+    margin-bottom: 32px;
+  }
+  .newsletter-subscription__input {
+    width: 90%;
+  }
+  .newsletter-subscription__submit {
+    width: 160px;
+    height: 50px;
+  }
+  .newsletter-subscription__submit-container {
+    align-items: flex-end;
+  }
+}
+.newsletter-contact__logo-huddle {
+  width: 205px;
+  margin-bottom: 20px;
+}
+.newsletter-contact__description {
+  font-size: 0.95em;
+  margin-bottom: 30px;
+}
+.newsletter-contact__phone-container {
+  margin-bottom: 15px;
+}
+.newsletter-contact__anchor {
+  text-decoration: none;
+  color: hsl(207deg, 100%, 98%);
+  margin-left: 20px;
+}
+.newsletter-contact__email-container {
+  margin-bottom: 50px;
+}
+.newsletter-contact__social-container {
+  width: 110px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+@media (min-width: 1440px) {
+  .newsletter-contact__logo-huddle {
+    width: 250px;
+  }
+  .newsletter-contact__description {
+    font-size: 1.1em;
+    width: 370px;
+  }
+}

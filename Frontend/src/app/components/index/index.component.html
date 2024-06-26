@@ -1,0 +1,79 @@
+<div class="container">
+  <h1>Lista de Artículos</h1>
+  <mat-progress-bar mode="indeterminate" *ngIf="loading"></mat-progress-bar>
+
+  <div class="articles-list" *ngIf="!loading">
+    <div *ngFor="let articulo of articulos" class="article-card">
+      <mat-card class="mat-elevation-z4">
+        <mat-card-header>
+          <mat-card-title>{{ articulo.titulo }}</mat-card-title>
+          <mat-card-subtitle>{{ articulo.fecha | date }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class="mat-card-content">
+          <div class="flex tematicas-tipos">
+            <!-- Mostrar Temáticas -->
+            <div
+              *ngIf="(articulo.tematicasDTO ?? []).length > 0; else noTematicas"
+              class="tematica"
+            >
+              <p *ngFor="let tematica of articulo.tematicasDTO ?? []">
+                {{ tematica.nombre }} /
+              </p>
+            </div>
+            <ng-template #noTematicas>
+              <p>No hay temáticas disponibles</p>
+            </ng-template>
+
+            <!-- Mostrar Tipos -->
+            <div
+              *ngIf="(articulo.tiposDTO ?? []).length > 0; else noTipos"
+              class="tipo"
+            >
+              <p *ngFor="let tipo of articulo.tiposDTO ?? []">
+                {{ tipo.nombre }}
+              </p>
+            </div>
+            <ng-template #noTipos>
+              <p>No hay tipos disponibles</p>
+            </ng-template>
+          </div>
+
+          <!-- Mostrar Imágenes -->
+          <div *ngIf="(articulo.imagenesDTO ?? []).length > 0; else noImagenes">
+            <img
+              *ngFor="let imagen of articulo.imagenesDTO ?? []"
+              [src]="'data:' + imagen.mime + ';base64,' + imagen.contenido"
+              alt="{{ imagen.name }}"
+              class="thumbnail"
+            />
+          </div>
+          <ng-template #noImagenes>
+            <p>No hay imágenes disponibles</p>
+          </ng-template>
+
+          <!-- Mostrar Párrafos -->
+          <div
+            *ngIf="(articulo.parrafosDTO ?? []).length > 0; else noParrafos"
+            class="parrafos-container"
+          >
+            <p *ngFor="let parrafo of articulo.parrafosDTO ?? []">
+              {{ parrafo.cuerpo }}
+            </p>
+          </div>
+          <ng-template #noParrafos>
+            <p>No hay párrafos disponibles</p>
+          </ng-template>
+        </mat-card-content>
+        <mat-card-actions>
+          <button
+            mat-button
+            color="primary"
+            routerLink="/articulo/{{ articulo.id }}"
+          >
+            Leer más
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,75 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.articles-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.mat-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mat-card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.mat-card-subtitle {
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.tematica,
+.tipo {
+  font-weight: bold;
+  color: #3f51b5;
+  font-size: 0.875rem;
+}
+
+.imagen-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.thumbnail {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.parrafos-container {
+  margin-top: 16px;
+}
+
+.parrafos-container p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.mat-card-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px;
+}
+
+.mat-card-actions button {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #3f51b5;
+  font-weight: bold;
+}

@@ -1,0 +1,21 @@
+table {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.container-fluid {
+  margin: 5px 100px;
+}
+
+th:nth-child(1) {
+  width: 80%;
+}
+
+th:nth-child(2) {
+  width: 15%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}

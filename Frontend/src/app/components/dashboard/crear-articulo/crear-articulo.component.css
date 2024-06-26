@@ -1,0 +1,44 @@
+mat-card {
+  margin-top: 16px;
+}
+
+.width-select {
+  width: 500px;
+}
+
+.container-articulo {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.width-field {
+  width: 100%;
+}
+
+.select-col {
+  display: flex;
+  gap: 25px;
+  width: 100%;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.thumbnail {
+  max-width: 200px;
+  height: auto;
+  margin-top: -60px;
+}
+
+.placeholder-text {
+  text-align: center;
+  color: #888;
+  margin-top: 10px;
+}
